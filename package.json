@@ -1,0 +1,23 @@
+{
+  "name": "timeware-api",
+  "main": "server.coffee",
+  "scripts": {
+    "start": "coffee server.coffee"
+  },
+  "author": "Gavin Gilmour <gavin.gilmour@scotland.pnn.police.uk>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "~1.9.2",
+    "express": "~4.10.2"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.8.0",
+    "gulp": "^3.8.10",
+    "cheerio": "^0.18.0",
+    "config": "^1.8.1",
+    "gulp-coffee": "^2.2.0",
+    "gulp-util": "^3.0.1",
+    "request": "^2.48.0",
+    "yaml": "^0.2.3"
+  }
+}
