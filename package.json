@@ -4,7 +4,7 @@
   "scripts": {
     "start": "coffee server.coffee"
   },
-  "author": "Gavin Gilmour <gavin.gilmour@scotland.pnn.police.uk>",
+  "author": "Gavin Gilmour <gavin.gilmour@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "body-parser": "~1.9.2",
