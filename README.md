@@ -6,7 +6,7 @@ Grab ultimate balance from timeware
 
 - `npm install`
 - `cp config/default.yml.example config/default.yml`
-- configure default.yml
+- configure `default.yml`
 - `coffee server.coffee`
 
 ## Usage
