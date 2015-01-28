@@ -1,0 +1,7 @@
+[{
+  "name"      : "Timeware API",
+  "script"    : "./server.coffee",
+  "env": {
+        "PORT": "9998"
+    }
+}]
