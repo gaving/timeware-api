@@ -1,6 +1,6 @@
 # timeware-api
 
-Grab ultimate balance from timeware
+Manipulate Timeware
 
 ## Installation
 
@@ -11,4 +11,6 @@ Grab ultimate balance from timeware
 
 ## Usage
 
-- Hit http://localhost:8080/john+smith
+- curl --header "X-Auth-Pass: 1234" -X GET `http://localhost:8080/history/john+smith`
+- curl --header "X-Auth-Pass: 1234" -X GET `http://localhost:8080/balance/john+smith`
+- curl --header "X-Auth-Pass: 1234" -X POST `http://localhost:8080/clock/john+smith`
