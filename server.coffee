@@ -34,9 +34,13 @@ router.route('/history/:id').get (req, res) ->
   fetch(req, res).then (body) ->
     $ = cheerio.load(body)
     data = $('#content table.body').first().find('tr').not('.tableHeadingEmployee').map(->
-      data: $(this).find('td').map(->
+      content = $(this).find('td').map(->
         $(this).text()
       ).get()
+      d = {}
+      for i, index in ['info', 'date', 'schedule', 'bookings', 'absence', 'total', 'opening', 'accum', 'target', 'closing']
+        d[i] = content[index]
+      d
     ).get()
     res.json data
   .fail (e) ->
