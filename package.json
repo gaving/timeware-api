@@ -5,6 +5,7 @@
     "start": "coffee server.coffee"
   },
   "author": "Gavin Gilmour <gavin.gilmour@gmail.com>",
+  "repository": "https://github.com/gaving/timeware-api.git",
   "license": "MIT",
   "devDependencies": {
     "body-parser": "~1.11.0",
