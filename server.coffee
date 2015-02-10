@@ -30,6 +30,18 @@ fetch = (req, res) ->
       dfd.resolve(body)
   dfd.promise
 
+router.route('/history/:id').get (req, res) ->
+  fetch(req, res).then (body) ->
+    $ = cheerio.load(body)
+    data = $('#content table.body').first().find('tr').not('.tableHeadingEmployee').map(->
+      data: $(this).find('td').map(->
+        $(this).text()
+      ).get()
+    ).get()
+    res.json data
+  .fail (e) ->
+    res.send(e)
+
 router.route('/balance/:id').get (req, res) ->
   fetch(req, res).then (body) ->
     $ = cheerio.load(body)
